@@ -131,39 +131,27 @@
 
 ### Thinking Process
 
-1. // step 1
-   แสดงแผนที่
-   ใช้ .print() method เพื่อพิมพ์แผนที่ลง terminal ให้ผู้เล่นเห็น
-   เริ่มต้นเกม
+1. // step 1: Print Field แสดงแผนที่ 
+    - ใช้ .print() method เพื่อพิมพ์แผนที่ (Field) ลง terminal ให้ผู้เล่นเห็น
+    - เริ่มต้นเกม โดยผู้เล่นจะเริ่มที่มุมซ้ายบน (0,0)
 
-2. // step 2
-   เริ่มต้นเกม
-   ผู้เล่นเริ่มที่มุมซ้ายบน (0,0)
+2. // step 2: Prompt for Move
+    - รอรับ input จาก user
+    - ใช้ prompt เพื่อระบุทางเดิน (W = up, S = down, A = left, D = right)
 
-3. // step 3
-   รอรับ input
-   ใช้ prompt เพื่อถามทางเดิน (W = up, S = down, A = left, D = right)
+3. // step 3: Update New Position
+    - check เงื่อนไขว่า
+       - ออกนอกแผนที่ไหม --> ถ้าออก ให้จบเกม
+       - เจอหมวกไหม     --> ถ้าเจอ ^ ให้แสดงว่าชนะ แล้วจบเกม
+       - เหยียบหลุมไหม    --> ถ้าเจอ O ให้แสดงว่าแพ้ แล้วจบเกม
+    - ถ้าไม่ใช่เงื่อนไข 3 อันดังกล่าว จะวาง * ลงบนตำแหน่งใหม่ตาม input ที่ผู้เล่นใส่ จากนั้นจะวน loop กลับไป Step 1 แสดงแผนที่ เพื่อรอรับ input ถัดไป
 
-4. // step 4
-   คำนวณตำแหน่งใหม่
-   เปลี่ยนตำแหน่งตาม input ที่ผู้เล่นใส่
-
-5. // step 5
-   ตรวจสอบว่าออกนอกแผนที่ไหม
-   ถ้าออก ให้จบเกม
-
-6. // step 6
-   ตรวจสอบว่าเจอหมวกไหม
-   ถ้าเจอ ^ ให้แสดงว่าชนะ แล้วจบเกม
-   
-7. // step 7
-   ตรวจสอบว่าเหยียบหลุมไหม
-   ถ้าเจอ O ให้แสดงว่าแพ้ แล้วจบเกม
-
-8. // step 8
+My flowcharts
+![alt text](image-1.png)
+![alt text](image-2.png)
 
 
-_Notes:_<br>
+Notes:_<br>
 _- You can attach flowcharts, diagrams, and images as needed._<br>
 _- The purpose of this section is not to explain your code but rather to convey your thoughts and ideas._
 
