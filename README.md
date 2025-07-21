@@ -131,13 +131,15 @@
 
 ### Thinking Process
 
+เมื่อเริ่มเกมส์
+
 1. // step 1: Print Field แสดงแผนที่ 
     - ใช้ .print() method เพื่อพิมพ์แผนที่ (Field) ลง terminal ให้ผู้เล่นเห็น
     - เริ่มต้นเกม โดยผู้เล่นจะเริ่มที่มุมซ้ายบน (0,0)
 
 2. // step 2: Prompt for Move
     - รอรับ input จาก user
-    - ใช้ prompt เพื่อระบุทางเดิน (W = up, S = down, A = left, D = right)
+    - ใช้ prompt เพื่อระบุทางเดิน (W = up, A = left, S = down, D = right)
 
 3. // step 3: Update New Position
     - check เงื่อนไขว่า
